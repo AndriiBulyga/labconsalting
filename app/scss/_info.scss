@@ -1,0 +1,38 @@
+/* INFO */
+
+.info-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #3a4456;
+}
+
+.info {
+
+    &__list {
+    flex-wrap: wrap;
+    }
+
+    &__item:nth-child(n+4):nth-child(-n+6) {
+        margin-top: 42px;
+    }
+    
+    &__item {
+        flex-direction: column;
+        width: 33%;
+    }
+    
+    &__title {
+        margin-bottom: 16px;
+    }
+    
+    &__link {
+        color: #949aa4;
+        line-height: 1.5em;
+    }
+    
+    &__link:hover {
+        color: #cc2c42;
+        transition: 0.5s;
+    }
+}
+

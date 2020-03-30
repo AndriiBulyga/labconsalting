@@ -1,0 +1,76 @@
+/*JUR*/
+
+
+.jur-block {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background: url(../img/services_img_bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.jur {
+
+    &__img {
+        background: url(../img/services_img_meeting.png) no-repeat center;
+        width: 207px;
+        height: 207px;
+        flex-shrink: 0;
+    }
+
+    &__info {
+        width: 31%;
+    }
+
+    &__subtitle {
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 1em;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    &__list {
+        border: 2px rgba(255, 255, 255, 1) solid;
+        border-radius: 5px;
+        width: 31%;
+        padding: 16px 28px;
+    }
+
+    &__item {
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__link {
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0em;
+        padding-left: 28px;
+        display: block;
+        border-bottom: 1px solid hidden ;
+        
+
+        &:before {
+            content: '→';
+            display: block;
+            position: absolute;
+            left: 0;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #fff;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/* ADVANTAGES */
+
+.advantage-block{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.advantage {
+
+    &__title { 
+        text-transform: none;
+    }
+    
+    &__text {
+        width: 47%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    &__text_s {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 97%;
+    }
+    
+    &__list {
+        flex-direction: column;
+    }
+    
+    &__item {
+        padding-top: 36px;
+        padding-bottom: 33px;
+        border-bottom: 1px #e5e6e8 solid;
+    }
+    
+    &__item:first-child {
+        border-top: 1px #e5e6e8 solid;
+    }
+    
+    &__logo {
+        margin-right: 35px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px $secondaryColor solid;
+        flex-shrink: 0;
+        background: #fff url('../img/list_img.png') no-repeat center;
+    }
+    
+    &__title {
+        margin-bottom: 15px;
+        color: $primaryColor;
+    }
+}
+

@@ -1,0 +1,24 @@
+//Specification
+@import "specification";
+
+//Home
+@import "header";
+@import "home/trust";
+@import "home/mission";
+@import "info";
+@import "footer";
+
+//About
+@import "about/advantages";
+@import "about/photo";
+
+//Services
+@import "services/jur";
+@import "services/subcategory";
+
+
+// Contacts
+@import "contacts/map";
+
+//Media
+@import "media";

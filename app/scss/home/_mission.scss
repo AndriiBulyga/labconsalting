@@ -1,0 +1,136 @@
+/* MISSION */
+
+.mission-block {
+    padding-top: 38px;
+    padding-bottom: 42px;
+    background: rgba(88, 100, 122, 1) url(/img/home_bg_mission.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+.mission {
+
+    &__title {
+        color: #9ba2af;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    &__strip {
+        border-bottom: 3px #6f7a8c solid;
+        margin-top: 11px;
+        margin-bottom: 20px;
+    }
+
+    &__block {
+        width: 73%;
+        color: #9ba2af;
+    }
+
+    &__text {
+        color: #9ba2af;
+        width: 92%;
+        letter-spacing: 0.03em;
+        line-height: 1.3em;
+        margin-bottom: 18px;
+    }
+
+    &__text_a {
+        width: 93%;
+        margin-bottom: 0px;
+    }
+
+    &__text_b {
+        width: 91%;
+    }
+
+    &__text_c {
+        width: 98%;
+    }
+
+    &__text:last-child {
+        margin-bottom: 0px; 
+    }
+
+    &__button {
+        font-family: 'Museo Sans 700', serif;
+        background: rgba(88, 100, 122, 0.5);
+        color: rgba(255, 255, 255, 0.7);
+        width: 173px;
+        height: 45px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px rgba(255, 255, 255, 0.7) solid;
+        display: flex;
+        justify-content: center;
+        transition: all .3s;
+        cursor: pointer;
+        flex-shrink: 0;
+        margin-top: 40px;
+    
+        &:hover {
+            background: #fff;
+            color: rgba(88, 100, 122, 1) ;
+        }
+    }
+}
+
+
+
+
+.mission__button:active, .mission__button:focus {
+    outline: none;
+    color: #fff;
+    background: rgba(88, 100, 122, 0.5);
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px rgba(255, 255, 255, 0.7) solid;
+    transition: all .3s;
+}
+
+.news {
+    width: 25%;
+
+    &__title {
+        color: #9ba2af;
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    &__item {
+        border-bottom: 1px #6f7a8c solid;
+        margin-top: 20px;
+    }
+
+    &__item:first-child {
+        margin-top: 0px;
+    }
+
+    &__img {
+        width: 88px;
+        height: 55px;
+        background: url(../img/home_truck.png) no-repeat center;
+        margin-right: 13px;
+    }
+
+    &__text {
+        color: #dddfe2;
+        width: 75%;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 10px;
+        letter-spacing: 0.045em;
+        line-height: 1.3em;
+    }
+
+    &__date {
+        font-size: 11px;
+        color: #dddfe2;
+        margin-bottom: 12px;
+    }
+
+    &__link {
+        display: inline-block;
+    }
+
+
+}

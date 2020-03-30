@@ -1,0 +1,90 @@
+/*FOOTER*/ 
+
+.footer {
+   padding-bottom: 37px;
+   background: #1f2531;
+   border-bottom: 18px #58647a solid;
+}
+
+.footer-block {
+
+    &__logo {
+    width: 37%;
+    margin-right: 15px;
+    }
+
+    &__img {
+        width: 71%;
+    }
+
+    &__text {
+        color: #84878e;
+        font-size: 12px;
+        width: 80%;
+        margin-bottom: 15px;
+        letter-spacing: normal;
+    }
+    
+    &__text:nth-child(2n) {
+        margin: 0;
+    }
+    
+    &__text_bold {
+        font-size: 12px;
+        color: #84878e;
+        font-weight: 900;
+    }
+
+    &__text_s {
+        font-size: 10px;
+        color: #84878e; 
+        margin-bottom: 0;
+        letter-spacing: normal;
+        width: 100%;
+    }
+     
+    &__text_m {
+         width: 100%;
+    }
+     
+    &__list {
+         width: 28%;
+         margin-top: 2%;
+    }
+     
+    &__all {
+         width: 26%;
+         margin-top: 2%;
+    }
+     
+    &__coaching {
+         padding-bottom: 25px;
+    }
+     
+    &__letter {
+         border: 1px solid #acafb3;
+         padding: 3px 5px;
+         font-size: 15px;
+         color: #84878e;
+         font-weight: bold;
+         margin-right: 5px;
+    }
+     
+    &__sms {
+        width: 100%;
+    }
+     
+    &__link {
+         color: #84878e;
+         border-bottom: 1px #1f2531 solid;
+         transition: 0.5s;
+         font-weight: normal;
+         font-size: 12px;
+    }
+     
+    &__link:hover {
+         color: #cc2c42;
+         border-bottom: 1px #cc2c42 solid;
+         transition: 0.5s;
+    }
+}
