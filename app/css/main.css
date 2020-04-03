@@ -134,7 +134,7 @@ h5 {
 }
 
 .navigation {
-  padding-top: 21px;
+  padding-top: 24px;
   padding-bottom: 10px;
   padding-right: 15px;
   padding-left: 15px;
@@ -142,7 +142,7 @@ h5 {
 }
 
 .navigation__logo {
-  width: 33%;
+  width: 25%;
 }
 
 .navigation__burger {
@@ -252,14 +252,23 @@ h5 {
   padding-top: 3px;
 }
 
-.offer__twitt {
+.offer__insta {
   color: #43c9fd;
-  border-color: #43c9fd;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #f7f734 11%, #f02f17 44%, #a00cf5 90%);
+  border-image-slice: 1;
 }
 
 .offer__tel {
   color: #2ea6d5;
   border-color: #2ea6d5;
+}
+
+.fa-instagram {
+  background: linear-gradient(45deg, #f7f734 11%, #f02f17 44%, #a00cf5 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .about-wrapper {

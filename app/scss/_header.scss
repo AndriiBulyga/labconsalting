@@ -133,15 +133,24 @@
         padding-top: 3px;
     }
 
-    &__twitt {
+    &__insta {
         color: #43c9fd;
-        border-color: #43c9fd;
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #f7f734 11%, #f02f17 44%, #a00cf5 90%);
+        border-image-slice: 1;
     }
 
     &__tel {
         color: #2ea6d5;
         border-color: #2ea6d5;
     }
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f7f734 11%, #f02f17 44%, #a00cf5 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 
@@ -179,7 +188,7 @@
     &__list {
         margin-top: 10px;
     }
-// 2
+
     &__link {
         color: #a1a6af;
         font-weight: bold;
