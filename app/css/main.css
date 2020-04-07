@@ -241,6 +241,14 @@ h5 {
   height: 46px;
 }
 
+.offer__item {
+  transition: transform 1s;
+}
+
+.offer__item:hover {
+  transform: rotate(360deg);
+}
+
 .offer__link {
   border: 2px #3365a3 solid;
   color: #3365a3;
@@ -989,8 +997,6 @@ h5 {
   font-size: 16px;
   letter-spacing: 0em;
   padding-left: 28px;
-  display: block;
-  border-bottom: 1px solid hidden;
 }
 
 .jur__link:before {
@@ -1095,7 +1101,7 @@ h5 {
   border-color: #fff;
 }
 
-.nav {
+.aside-block {
   background: #fafafb;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -1103,7 +1109,7 @@ h5 {
   height: 830px;
 }
 
-.nav__title {
+.aside-block__title {
   font-size: 18px;
   font-weight: bold;
   color: #a1a6af;
@@ -1111,26 +1117,26 @@ h5 {
   margin-left: 28px;
 }
 
-.nav__list {
+.aside-block__list {
   margin-bottom: 55px;
 }
 
-.nav__item {
+.aside-block__item {
   border-bottom: 1px #dfdfe8 solid;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 24px;
 }
 
-.nav__item:first-child {
+.aside-block__item:first-child {
   border-top: 1px solid #dfdfe8;
 }
 
-.nav__item:nth-child(3) .nav__link {
+.aside-block__item:nth-child(3) .aside-block__link {
   width: 60%;
 }
 
-.nav__link {
+.aside-block__link {
   position: relative;
   color: #747487;
   font-size: 16px;
@@ -1140,7 +1146,7 @@ h5 {
   padding-left: 28px;
 }
 
-.nav__link:before {
+.aside-block__link:before {
   content: '';
   display: block;
   width: 10px;
@@ -1153,15 +1159,15 @@ h5 {
   transition: 0.5s;
 }
 
-.nav__link:hover {
+.aside-block__link:hover {
   color: #cc2c42;
 }
 
-.nav__link:hover:before {
+.aside-block__link:hover:before {
   background: #cc2c42;
 }
 
-.nav__kube {
+.aside-block__kube {
   width: 10px;
   height: 10px;
   border: 1px #a1a6af solid;
@@ -1170,7 +1176,7 @@ h5 {
   margin-right: 17px;
 }
 
-.nav__img {
+.aside-block__img {
   background: url(../img/services_img_fb.png) no-repeat center;
   width: 140px;
   height: 140px;
@@ -1179,7 +1185,7 @@ h5 {
   margin: 0 auto;
 }
 
-.nav__name {
+.aside-block__name {
   font-size: 16px;
   font-weight: bold;
   color: #747487;
@@ -1188,7 +1194,7 @@ h5 {
   letter-spacing: 0.001em;
 }
 
-.nav__text {
+.aside-block__text {
   text-align: center;
   font-size: 13px;
   width: 75%;
@@ -1206,7 +1212,7 @@ h5 {
   font-weight: normal;
 }
 
-.nav__link_a {
+.aside-block__link_a {
   color: #2c60a0;
   text-align: center;
   font-size: 14px;
