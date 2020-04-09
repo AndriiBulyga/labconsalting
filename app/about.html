@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>About Lab Consulting</title>
 </head>
@@ -167,40 +168,24 @@
                 <h3 class="photo__title">    
                     Фото наших мощностей
                 </h3>
-                <ul class="photo__list d-flex jcsb aic">
-                    <li class="photo__item">
+                <div class="photo__list d-flex jcsb aic">
+                    <a class="photo__item" href="img/photo1.jpg" data-lightbox="gallery" data-title="Служба погрузчиков">
                         <img class="photo__img" src="img/photo1.jpg" alt="loader">
-                        <div class="photo__shadow shadow">
-                            <a class="shadow__item" href="#">
-                                <i class="fa fa-expand"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="photo__item">
+                        <i class="fa fa-expand photo__icon"></i>
+                    </a>
+                    <a class="photo__item" href="img/photo2.jpg" data-lightbox="gallery" data-title="Корпоративные перевозки">
                         <img class="photo__img" src="img/photo2.jpg" alt="trucks">
-                        <div class="photo__shadow shadow">
-                            <a class="shadow__item" href="#">
-                                <i class="fa fa-expand"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="photo__item">
+                        <i class="fa fa-expand photo__icon"></i>
+                    </a>
+                    <a class="photo__item" href="img/photo3.jpg" data-lightbox="gallery" data-title="Индивидуальные перевозки">
                         <img class="photo__img" src="img/photo3.jpg" alt="truck">
-                        <div class="photo__shadow shadow">
-                            <a class="shadow__item" href="#">
-                                <i class="fa fa-expand"></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="photo__item">
-                        <img class="photo__img" src="img/photo4.jpg" alt="cargo ship">
-                        <div class="photo__shadow shadow">
-                            <a class="shadow__item" href="#">
-                                <i class="fa fa-expand"></i>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                        <i class="fa fa-expand photo__icon"></i>
+                    </a>
+                    <a class="photo__item" href="img/photo4.jpg" data-lightbox="gallery" data-title="Логистика морскими путями">
+                        <img class="photo__img" src="img/photo4.jpg" alt="сargo">
+                        <i class="fa fa-expand photo__icon"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -368,6 +353,7 @@
         </div>
     </footer>
     <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

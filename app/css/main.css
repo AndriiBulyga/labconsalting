@@ -897,17 +897,47 @@ h5 {
   width: 22%;
 }
 
+.photo__item:hover::after {
+  opacity: 1;
+}
+
+.photo__item:hover .photo__icon {
+  opacity: 1;
+}
+
+.photo__item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 99%;
+  background: rgba(154, 151, 167, 0.7);
+  border: 7px #9a97a7 solid;
+  opacity: 0;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
 .photo__img {
   width: 100%;
 }
 
-.photo__item:last-child {
-  margin-right: 0;
+.photo__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 3;
+  opacity: 0;
+  transition: .3s;
+  font-size: 30px;
 }
 
-.photo__item:hover .shadow {
-  visibility: visible;
-  opacity: 1;
+.photo__icon:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .shadow {
@@ -921,25 +951,6 @@ h5 {
   transition: all 0.5s ease;
   visibility: hidden;
   border: 7px #9a97a7 solid;
-}
-
-.shadow__item {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-expand {
-  color: #fff;
-  font-size: 30px;
-  transition: 0.5s;
-}
-
-.fa-expand:hover {
-  font-size: 33px;
-  transition: 0.5s;
 }
 
 /*JUR*/
@@ -1206,8 +1217,6 @@ h5 {
 .fa-angle-right {
   color: #99999d;
   display: block;
-  margin-right: 25px;
-  margin-left: 30px;
   font-size: 25px;
   font-weight: normal;
 }

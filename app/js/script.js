@@ -8,7 +8,9 @@ $(document).ready(function() {
     $('.big-slider').slick({
         autoplay: false,
         autoplaySpeed: 1000,
-        prewArrow: '<i class="fa fa-angle-left"></i>'
+        leftArrow: '<i class="fa fa-angle-left"></i>',
+        nextArrow: '<i class="fa fa-angle-right"></i>',
+        dots: true
     });
     
 });
