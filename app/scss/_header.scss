@@ -46,7 +46,7 @@
     }
 
     &__link:hover {
-        color: #cc2c42;
+        color: $hoverColor;
         transition: .5s;
     }
     
@@ -209,8 +209,8 @@
         transition: .5s;
 
         &:hover {
-            border: 2px solid #cc2c42;
-            color: #cc2c42;
+            border: 2px solid $hoverColor;
+            color: $hoverColor;
         }  
     }
 }
@@ -266,11 +266,11 @@
         transition: .5s;
 
         &:hover {
-            border: 2px solid #cc2c42;
+            border: 2px solid $hoverColor;
     
             .services__subtitle,
             .services__text {
-                color:#cc2c42;
+                color:$hoverColor;
             }
         } 
     }
@@ -344,11 +344,11 @@
         text-align: center;
 
         &:hover {
-            color: #cc2c42;
-            border: 2px solid #cc2c42;
+            color: $hoverColor;
+            border: 2px solid $hoverColor;
 
             .contacts__text {
-            color:#cc2c42;
+            color:$hoverColor;
             }       
         }  
     }

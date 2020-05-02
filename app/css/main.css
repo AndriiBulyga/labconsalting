@@ -824,7 +824,7 @@ h5 {
 
 .footer-block__link:hover {
   color: #cc2c42;
-  border-bottom: 1px #cc2c42 solid;
+  border-bottom: 1px solid #cc2c42;
   transition: 0.5s;
 }
 
@@ -940,17 +940,8 @@ h5 {
   transform: translate(-50%, -50%) scale(1.2);
 }
 
-.shadow {
-  background: rgba(154, 151, 167, 0.7);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 99%;
-  opacity: 0;
-  transition: all 0.5s ease;
-  visibility: hidden;
-  border: 7px #9a97a7 solid;
+.lb-caption {
+  color: #fff;
 }
 
 /*JUR*/
@@ -1093,9 +1084,6 @@ h5 {
 
 .consultation__button:hover {
   border: 2px solid #cc2c42;
-  padding: 12px 25px;
-  display: block;
-  transition: 0.5s;
 }
 
 .consultation__button:active {
@@ -1187,7 +1175,7 @@ h5 {
   margin-right: 17px;
 }
 
-.aside-block__img {
+.big-slider__img {
   background: url(../img/services_img_fb.png) no-repeat center;
   width: 140px;
   height: 140px;
@@ -1196,7 +1184,17 @@ h5 {
   margin: 0 auto;
 }
 
-.aside-block__name {
+.big-slider__img_m {
+  background: url(../img/services_img_fb2.png) no-repeat center;
+  background-size: 102%;
+}
+
+.big-slider__img_s {
+  background: url(../img/services_img_fb3.png) no-repeat center;
+  background-size: 102%;
+}
+
+.big-slider__name {
   font-size: 16px;
   font-weight: bold;
   color: #747487;
@@ -1205,7 +1203,7 @@ h5 {
   letter-spacing: 0.001em;
 }
 
-.aside-block__text {
+.big-slider__text {
   text-align: center;
   font-size: 13px;
   width: 75%;
@@ -1213,21 +1211,68 @@ h5 {
   margin-top: 14px;
 }
 
-.fa-angle-left,
-.fa-angle-right {
-  color: #99999d;
-  display: block;
-  font-size: 25px;
-  font-weight: normal;
-}
-
-.aside-block__link_a {
+.big-slider__link_a {
   color: #2c60a0;
   text-align: center;
   font-size: 14px;
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 26px;
+}
+
+.slick-arrow {
+  color: #404048;
+  font-size: 25px;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  display: block;
+  cursor: pointer;
+  z-index: 2;
+  transition: .3s;
+}
+
+.arrow-left:hover {
+  left: 9%;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  display: block;
+  cursor: pointer;
+  z-index: 2;
+  transition: .3s;
+}
+
+.arrow-right:hover {
+  right: 9%;
+}
+
+.slick-dots li {
+  width: 11px;
+  height: 11px;
+  background: #bfc8d7;
+}
+
+.slick-dots li button::before {
+  content: '';
+  display: block;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: #bfc8d7;
+}
+
+.slick-dots li.slick-active button::before {
+  background: #8b9ab7;
 }
 
 .scroll__item {
@@ -1366,6 +1411,9 @@ h5 {
   body.lock {
     overflow: hidden;
   }
+  .header-logo__img {
+    width: 30%;
+  }
   .navigation {
     /*BURGER*/
   }
@@ -1378,7 +1426,7 @@ h5 {
   .navigation__burger {
     display: block;
     position: relative;
-    width: 5em;
+    width: 3em;
     height: 2em;
   }
   .navigation__burger span {
@@ -1441,7 +1489,7 @@ h5 {
     color: #fff;
   }
   .navigation__link:hover {
-    color: #b81c31;
+    color: #cc2c42;
   }
   .services {
     flex-wrap: wrap;
@@ -1472,10 +1520,11 @@ h5 {
   .subcategory__block {
     width: 100%;
   }
-  nav {
+  aside {
     width: 100%;
+    margin: 0 auto;
   }
-  .nav {
+  .aside-block {
     width: 100%;
   }
   .jur__info {
@@ -1520,7 +1569,7 @@ h5 {
     width: 100%;
   }
   .header-logo__img {
-    width: 100%;
+    width: 50%;
   }
   .offer-block {
     padding-top: 68px;
@@ -1565,6 +1614,9 @@ h5 {
   }
   .services__item:last-child {
     margin-bottom: 0px;
+  }
+  .big-slider__text {
+    width: 95%;
   }
   .advantage__text {
     width: 45%;
@@ -1690,7 +1742,7 @@ h5 {
 /* 320-576px */
 @media screen and (max-width: 576px) {
   .header-logo__img {
-    width: 150%;
+    width: 100%;
   }
   .navigation__logo {
     width: 130%;
@@ -1834,12 +1886,21 @@ h5 {
   .info__item:nth-child(2n) {
     margin-top: 55px;
   }
+  .consultation {
+    padding-left: 10px;
+  }
   .consultation__text {
-    width: 69%;
+    width: 100%;
     margin-top: 15px;
   }
   .consultation__img {
     display: none;
+  }
+  .consultation__button {
+    padding: 10px 14px;
+  }
+  .consultation__tel {
+    margin-left: 5px;
   }
   .contacts__list {
     flex-direction: column;

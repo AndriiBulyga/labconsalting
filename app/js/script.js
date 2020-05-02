@@ -4,14 +4,18 @@ $(document).ready(function() {
         $('.navigation__burger,.navigation__menu').toggleClass('active');
         $('.body').toggleClass('lock');
     });
+
     // Слайдер
     $('.big-slider').slick({
-        autoplay: false,
-        autoplaySpeed: 1000,
-        leftArrow: '<i class="fa fa-angle-left"></i>',
-        nextArrow: '<i class="fa fa-angle-right"></i>',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: '<i class="fa fa-angle-left arrow-left"></i>',
+        nextArrow: '<i class="fa fa-angle-right arrow-right"></i>',
+        slidesToShow: 1,
+        slidesToScroll: 1,
         dots: true
     });
+
     
 });
 

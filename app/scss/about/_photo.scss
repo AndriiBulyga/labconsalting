@@ -63,16 +63,6 @@
     }
 }
 
-.shadow {
-    background: rgba(154, 151, 167, 0.7);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 99%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    visibility: hidden;
-    border: 7px #9a97a7 solid;
-
+.lb-caption {
+    color: #fff;
 }

@@ -83,8 +83,8 @@
     }
      
     &__link:hover {
-         color: #cc2c42;
-         border-bottom: 1px #cc2c42 solid;
+         color: $hoverColor;
+         border-bottom: 1px solid $hoverColor;
          transition: 0.5s;
     }
 }

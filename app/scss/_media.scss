@@ -25,6 +25,10 @@
       overflow: hidden;
    } 
 
+   .header-logo__img {
+      width: 30%;
+   }
+
    .navigation {
 
       &__logo {
@@ -39,7 +43,7 @@
       &__burger {
          display: block;
          position: relative;
-         width: 5em;
+         width: 3em;
          height: 2em;
       }
 
@@ -114,7 +118,7 @@
       }
    
       &__link:hover {
-         color: #b81c31;
+         color: $hoverColor;
       }
    }
 
@@ -154,13 +158,15 @@
          width: 100%;
       }
    }
-   nav {
-     width: 100%;
-   }
 
-   .nav {
+    aside {
       width: 100%;
-   }
+      margin: 0 auto;
+  }
+
+   .aside-block {
+      width: 100%;
+  }
 
    .jur {
 
@@ -224,7 +230,7 @@
    }
 
    .header-logo__img {
-      width: 100%;
+      width: 50%;
    }
 
 
@@ -286,6 +292,10 @@
       }
    }
 
+   .big-slider__text {
+      width: 95%; 
+   }
+
    .advantage__text {
       width: 45%;
    }
@@ -310,8 +320,6 @@
       }
    }
 
-   
-
    .jur__info  {
       width: 59%;
    }
@@ -335,8 +343,6 @@
          width: 100%;
       }
    }
-
-
 
    .news {
       width: 100%;
@@ -402,8 +408,6 @@
       }
    }
 
-  
-
    .contacts {
       flex-wrap: wrap;
 
@@ -463,15 +467,13 @@
       }
    }
 
-
-   
 }
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
 
    .header-logo__img {
-      width: 150%;
+      width: 100%;
    }
 
    .navigation {
@@ -677,13 +679,23 @@
 
    .consultation {
 
+      padding-left: 10px;
+
       &__text {
-         width: 69%;
+         width: 100%;
          margin-top: 15px;
       }
 
       &__img {
          display: none;
+      }
+
+      &__button {
+         padding: 10px 14px;
+      }
+
+      &__tel {
+         margin-left: 5px;
       }
    }
 
